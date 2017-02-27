@@ -29,6 +29,14 @@
           </label>
         </div>
     </fieldset>
+    <div class="form-group">
+      <label>Primary Language</label>
+      <select class="form-control">
+        <option *ngFor="let lang of languages">
+          {{lang}}
+        </option>
+      </select>
+    </div>
 
     <button class ="btn btn-primary" type ="submit">OK</button>
   </form>
