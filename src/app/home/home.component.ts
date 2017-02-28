@@ -16,6 +16,14 @@ export class HomeComponent {
     } else {
       this.model.firstName = value;
     }
-
   }
+
+  lastNameToUpperCase(value: string){
+    if(value.length > 0){
+      this.model.lastName = value.charAt(0).toUpperCase()+value.slice(1);
+    } else {
+      this.model.lastName = value;
+    }
+  }
+
 }
