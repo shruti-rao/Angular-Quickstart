@@ -10,15 +10,16 @@
 
     <div class="form-group">
       <label for="lastNameId">Last Name</label>
-      <input id="lastNameId" type="text" class="form-control" required name="lastName" [ngModel="model.lastname"
+      <input id="lastNameId" type="text" class="form-control" required name="lastName" [ngModel]="model.lastname"
              (ngModelChange)="lastNameToUpperCase($event)">
     </div>
 
-    <!--<div class="checkbox">-->
-      <!--<label>-->
-        <!--<input type="checkbox" name="is-full-time" ngModel> Full Time Employee-->
-      <!--</label>-->
-    <!--</div>-->
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="is-full-time"
+               [(ngModel)]="model.isFullTime"> Full Time Employee
+      </label>
+    </div>
 
     <!--<fieldset>-->
         <!--<label>Payment Type</label>-->

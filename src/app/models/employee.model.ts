@@ -1,7 +1,8 @@
 export class Employee{
   constructor(
     public firstName: String,
-    public lastName: Sting
+    public lastName: String,
+    public isFullTime: boolean
   ){
 
   }
