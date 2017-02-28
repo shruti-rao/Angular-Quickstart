@@ -21,21 +21,23 @@
       </label>
     </div>
 
-    <!--<fieldset>-->
-        <!--<label>Payment Type</label>-->
-        <!--<div class="radio">-->
-          <!--<label>-->
-            <!--<input type="radio" name="pay-type" value="w2" checked>-->
-            <!--W2-->
-          <!--</label>-->
-        <!--</div>-->
-        <!--<div class="radio">-->
-          <!--<label>-->
-            <!--<input type="radio" name="pay-type" value="1099">-->
-            <!--1099-->
-          <!--</label>-->
-        <!--</div>-->
-    <!--</fieldset>-->
+    <fieldset>
+        <label>Payment Type</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="paymentType" value="w2" checked
+                   [(ngModel)]="model.paymentType">
+            W2
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="paymentType" value="1099"
+                   [(ngModel)]="model.paymentType">
+            1099
+          </label>
+        </div>
+    </fieldset>
 
     <!--<div class="form-group">-->
       <!--<label>Primary Language</label>-->
