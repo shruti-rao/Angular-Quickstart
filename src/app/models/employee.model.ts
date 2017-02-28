@@ -3,7 +3,8 @@ export class Employee{
     public firstName: String,
     public lastName: String,
     public isFullTime: boolean,
-    public paymentType: String
+    public paymentType: String,
+    public primaryLanguage: String
   ){
 
   }
